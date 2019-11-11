@@ -4,8 +4,8 @@
 // @author              ZaresPlus X  ft.| Skid |
 // @version             1.8.8
 // @description         A cheat for krunker.io
-// @downloadURL         https://skidlamer.github.io/js/krunker_skid.user.js
-// @supportURL          https://github.com/skidlamer/skidlamer.github.io
+// @downloadURL         https://github.com/ZaresPlusX/Krunker-Zares/blob/master/KrunkerZares.user.js
+// @supportURL          https://github.com/zaresplusx/krunker-zares
 // @icon                https://krunker.io/img/favicon.png
 // @match               *://krunker.io/*
 // @require             https://skidlamer.github.io/js/FileSaver.js
