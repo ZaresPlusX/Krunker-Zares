@@ -27,10 +27,9 @@
 // Making a YouTube video about this cheat you need to give full credits to the working team. Don't be evil. Stealing this script and putting your own name is breaking the rules of the cheat.
 // Don't use ads on the links.
 // Subscribe to coming people
-// HRT - 
+// HRT - https://www.youtube.com/channel/UC7tlCd9wQ-IlVDmJ-DiylOw/
 // ZaresPlus X - youtube.com/zaresplusx
-// Funk -
-// Lemons - 
+// Funk - https://www.youtube.com/channel/UC1-WO_EGUpp5WxGzTynaDdg
 // Thanks And Enjoy!
 class Utilities {
     constructor() {
