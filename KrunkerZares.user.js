@@ -1,36 +1,69 @@
 // ==UserScript==
-// @name                Krunker Zares
-// @namespace           https://youtube.com/zaresplusx
-// @author              ZaresPlus X  ft.| Skid |
+// @name                Krunker_Zares
+// @namespace           http://youtube.com/zaresplusx
+// @author              ZaresPlus X
+// @description         Being smart not to be stupid.
 // @version             1.8.8
-// @description         A cheat for krunker.io
-// @downloadURL         https://github.com/ZaresPlusX/Krunker-Zares/blob/master/KrunkerZares.user.js
-// @supportURL          https://github.com/zaresplusx/krunker-zares
-// @icon                https://krunker.io/img/favicon.png
-// @match               *://krunker.io/*
+// @supportURL          http://github.com/zaresplusx
+// @icon                https://www.google.com/s2/favicons?domain=krunker.io
 // @require             https://skidlamer.github.io/js/FileSaver.js
-// @run-at              document-start
+// @match               *://krunker.io/*
 // @grant               none
 // ==/UserScript==
-// Please Do not copy and paste this script to greasy fork and pretend you made it its lame/r I can and will give you the hose again
-// Discord Krunker Heros - https://discord.gg/Emkf5by
-// hook - credit to @lemons - https://github.com/Lemons1337
-// esp - credit to @techy - https://www.gitmemory.com/Tehchy
-// game - credit to @sidney - https://twitter.com/sidney_de_vries?lang=en
-// other excellent krunker cheat script developers:
-// @lemons - https://github.com/Lemons1337
-// @funk - https://github.com/funk
-// @masterP - https://github.com/MasterP-kr
-// @ZaresPlus X - github.com/zaresplusx
-// @Nathan - for Krunkers Failed Anti cheat I hear McDonalds Is Hiring.
-// @Skidlamer - for the the hard work
-// Making a YouTube video about this cheat you need to give full credits to the working team. Don't be evil. Stealing this script and putting your own name is breaking the rules of the cheat.
-// Don't use ads on the links.
-// Subscribe to coming people
-// HRT - https://www.youtube.com/channel/UC7tlCd9wQ-IlVDmJ-DiylOw/
-// ZaresPlus X - youtube.com/zaresplusx
-// Funk - https://www.youtube.com/channel/UC1-WO_EGUpp5WxGzTynaDdg
-// Thanks And Enjoy!
+// Custom hub Edits the game status
+alert("INJECTED KRUNKER ZARES")
+// Starts the game
+document.title = "Krunker Zares";
+// Edits the game status to zaresplusx more changes gonna come toh
+document.getElementById("instructions").style.color = "Yellow";
+document.getElementById('instructions').innerHTML = 'Loading Krunker_Zares by NoS Team';
+document.getElementById('modVote').innerHTML = 'YT: ZaresPlus X';
+document.getElementById("modVote").style.color = "Yellow";
+document.getElementById("texts3DHolder").innerHTML = 'GET MORE HACKS AT ZaresPlus X channel';
+// Adblock
+document.getElementById("krunkerio_728x90_1").remove();
+// more shit
+document.getElementById("subLogoButtons").innerHTML = '<div class="button small buttonP" id="menuBtnHost" onmouseenter="playTick()" onclick="openHostWindow()">Host Game</div><div class="button small buttonR" id="menuBtnBrowser" onmouseenter="playTick()" onclick="showWindow(2)">Server Browser</div><div id="inviteButton" class="button small" onmouseenter="playTick()" onclick="copyInviteLink()">Invite</div><div class="button small" id="menuBtnJoin" onmouseenter="playTick()" onclick="showWindow(24)">Join</div><div class="button small buttonP" id="hackMenu" onmouseenter="playTick()" onclick="window.open(\'http://youtube.com/zaresplusx\', \'_blank\', \'location=yes,height=570,width=520,scrollbars=yes,status=yes\');">GET MORE HACKS HERE</div></div>';
+document.getElementById("aContainer").innerHTML = 'YT: ZaresPlus X';
+document.getElementById("aContainer").style.color = "white";
+// Font size
+document.getElementById("aContainer").style.fontSize = "larger";
+// Aimdot
+var d = document.createElement('div');
+d.style.cssText = 'width:8px;height:8px;background-color:#0BDEE8;position:absolute;margin:auto;top:0;right:0;bottom:0;left:0;z-index:200;border-radius:4px';
+document.body.appendChild(d);
+// Chat messege
+document.getElementById('chatList').innerHTML = '<div class="chatItem"><span style="color:#DAE110">Remembe to check out ZaresPlus X channel for more hacks<span class="chatMsg">| Krunker_Zares  <span class="chatMsg"><span style="color:#FFFF00"> | youtube.com/zaresplusx</span></span></span></div>';
+//Fps counter idk why to use this shit when you can have a fps counter either lol dumbass system
+javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()
+//Full screen
+//<div class="chatItem" style="word-break:break-all;overflow-wrap:break-word;"><span class="chatMsg"><span style="color:#eb5656">DodgyDucks</span><img style="opacity:0.7;margin-right:9px;" class="weaponChatIcon" src="./textures/weapons/icon_1.png"><img class="headShotChatIcon" src="./img/headshot_0.png"><span style="color:#eb5656">SpoopyAmos</span></span></div>
+document.fullscreenEnabled =
+	document.fullscreenEnabled ||
+	document.mozFullScreenEnabled ||
+	document.documentElement.webkitRequestFullScreen;
+
+function requestFullscreen(element) {
+	if (element.requestFullscreen) {
+		element.requestFullscreen();
+	} else if (element.mozRequestFullScreen) {
+		element.mozRequestFullScreen();
+	} else if (element.webkitRequestFullScreen) {
+		element.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+	}
+}
+
+if (document.fullscreenEnabled) {
+	requestFullscreen(document.documentElement);
+}
+    function read(url) {
+    return new Promise(resolve => {
+        fetch(url).then(res => res.text()).then(res => {
+            return resolve(res);
+        });
+    });
+};
+//end editing here ps.. here tip from zaresplusx. "require needs more codes than here so catch up"
 class Utilities {
     constructor() {
         this.exports;
@@ -90,10 +123,10 @@ class Utilities {
         }, 100);
     }
 
-    onLoad() {
+ onLoad() {
         this.menus
-        .set('YT: ZaresPlus X', [this.newFeature('Self', []), this.newFeature('Weapon', []), this.newFeature('Visual', []), this.newFeature('Settings', [])])
-        .set('Self', [this.newFeature('AutoBhop', ['Off', 'Auto Jump', 'Key Jump', 'Auto Slide', 'Key Slide']), this.newFeature('SkidSettings', ['Off', 'On'])])
+        .set('Krunker Zares', [this.newFeature('Self', []), this.newFeature('Weapon', []), this.newFeature('Visual', []), this.newFeature('Settings', [])])
+        .set('Self', [this.newFeature('AutoBhop', ['Off', 'Auto Jump', 'Key Jump', 'Auto Slide', 'Key Slide']), this.newFeature('ZaresSettings', ['Off', 'On'])])
         .set('Weapon', [this.newFeature('AutoAim', ['Off', 'Aim Assist', 'Aim Bot', 'Trigger Bot']), this.newFeature('AutoReload', ['Off', 'On']), this.newFeature('Aim Through Walls', ['Off', 'On']), this.newFeature('UseDeltaForce', ['Off', 'On'])])
         .set('Visual', [this.newFeature('EspMode', ['Off', 'Full', '2d', 'Walls']), this.newFeature('Tracers', ['Off', 'On'])])
         .set('Settings', [this.newFeature('Reset', [], this.resetSettings), this.newFeature('Save game.js', [], _=>{self.saveAs(new Blob([self.GameScript], {type: "text/plain;charset=utf-8"}), `game.js`)})])
@@ -165,7 +198,7 @@ class Utilities {
                     case 'EspMode':
                     this.settings.espMode = feature.value;
                     break;
-                case 'SkidSettings':
+                case 'ZaresSettings':
                     if (feature.value) new Map([ ["fov", 85], ["fpsFOV", 85], ["weaponBob", 3], ["weaponLean", 6], ["weaponOffX", 2], ["weaponOffY", 2], ["weaponOffZ", 2] ]).forEach(function(value, key, map) { window.setSetting(key, value) });
                     break;
                 case 'UseDeltaForce':
@@ -177,7 +210,7 @@ class Utilities {
     }
 
     resetSettings() {
-        if (confirm("Are you sure you want to reset all your skid settings? This will also refresh the page")) {
+        if (confirm("Are you sure you want to reset all your Zares settings? This will also refresh the page")) {
             Object.keys(window.localStorage).filter(x => x.includes("utilities_")).forEach(x => window.localStorage.removeItem(x));
             window.location.reload();
         }
@@ -292,7 +325,7 @@ class Utilities {
             switch (value) {
                 case 1:
                     /*Aim Assist*/
-                    if (this.world.controls.mouseDownR > 0) {
+                    if (this.world.controls.mouseDownR > 1) {
 						this.world.config.deltaMlt = this.settings.delta;
                         this.camLookAt(target.x2, target.y2 + target.height + this.settings.aimOffset - this.server.cameraHeight - this.server.crouchDst * target.crouchVal - this.server.recoilMlt * this.me.recoilAnimY * this.me.recoilForce, target.z2);
 						this.world.config.deltaMlt = 1;
@@ -657,7 +690,7 @@ class Utilities {
     drawMenu() {
         if (this.settings.showMenu) {
             switch(this.activeMenuIndex) {
-                case 0: this.drawMenuItem('YT: ZaresPlus X'); break;
+                case 0: this.drawMenuItem('Krunker Zares'); break;
                 case 1: this.drawMenuItem('Self'); break;
                 case 2: this.drawMenuItem('Weapon'); break;
                 case 3: this.drawMenuItem('Visual'); break;
