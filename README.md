@@ -1,5 +1,5 @@
 zip-ext is missing [Rebuilding it for 1.9.3]
-# Krunker_Zares 🇿
+# Krunker_Zares 🇿🖾
 
 <b>Requirements:</b> • Chrome browser</br>
 
