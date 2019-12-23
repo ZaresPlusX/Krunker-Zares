@@ -1,0 +1,24 @@
+{
+  "name": "Kruner Zares",
+  "homepage_url": "https://github.com/ZaresPlusX/Krunker_Zares",
+  "version": "1.9.3",
+  "manifest_version": 2,
+  "description": "A krunker.io Cheat",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://krunker.io/*",
+    "*://matchmaker.krunker.io/*",
+    "background"
+  ],
+  "web_accessible_resources": [
+    "zip.js", "zip-ext.js"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Krunker Hero"
+  },
+  "background": {
+    "scripts": ["hook.js"]
+  }
+}
