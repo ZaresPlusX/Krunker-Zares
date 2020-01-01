@@ -1,4 +1,4 @@
-zip-ext is missing [Rebuilding it for 1.9.3]
+zip-ext is under testing. [Rebuilding it for 1.9.3]
 # Krunker_Zares 🇿ⓧ
 
 <b>Requirements:</b> • Chrome browser</br>
@@ -23,13 +23,14 @@ ______________________________________________________________________________
 
 - [x] Esp - thx to (hrt)
 - [x] Box esp
-- [x] Silent Aim
 - [x] Better Sniper Recticle
 - [x] Trace lines
-- [x] Quick Scoper
+- [x] Trigger Bot
 - [x] Aim assist
 - [x] Aim bot
 - [x] BHop
+
+More features will be coming
 
 ### Enjoy!
 ______________________________________________________________________________
