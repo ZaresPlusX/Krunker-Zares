@@ -1,4 +1,4 @@
-I'll be off for 2 weeks. I'll be in trip
+**[I'll be off for 2 weeks. I'll be in trip]**
 zip-ext is under testing. [Rebuilding it for 1.9.3]
 # Krunker_Zares 🇿ⓧ
 
