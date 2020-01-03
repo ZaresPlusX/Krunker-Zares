@@ -270,7 +270,7 @@
                 me.aimVal = 0;
                 inputs[input.scope] = controls[_mouseDownR] = 0;
                 inputs[input.shoot] = controls[_mouseDownL] = 0;
-                settings.scopingOut = true;
+                settings.scopingOut = false;
             }
             if (me.aimVal === 1) {
                 settings.scopingOut = false;
