@@ -263,7 +263,7 @@
                 setTimeout(() => {
                     inputs[input.scope] = controls[_mouseDownR] = 0;
                     inputs[input.shoot] = controls[_mouseDownL] = 0;
-                    settings.canShoot = true;
+                    settings.canShoot = false;
                 }, me.weapon.name == "Sniper Rifle" ? me.weapon.rate / 1.85 : me.weapon.rate / 4);
             }
             if (controls[_mouseDownL] === 1) {
