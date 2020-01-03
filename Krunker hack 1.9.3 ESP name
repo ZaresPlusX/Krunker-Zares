@@ -167,8 +167,8 @@
     let settings = {
         isSliding: false,
         distance: Infinity,
-        scopingOut: ture,
-        canShoot: false,
+        scopingOut: false,
+        canShoot: true,
     }
 
     const downKeys = new Set();
@@ -288,7 +288,7 @@
         }
 
         //auto aim
-        let isLockedOn = false;
+        let isLockedOn = true;
         let ty = controls.object.rotation.y;
         let tx = controls[_pchObjc].rotation.x;
         let target = world.players.list.filter(x => {
