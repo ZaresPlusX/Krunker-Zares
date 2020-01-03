@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         KRUNKER_SNIPER HACK 1.9.3
+// @name         KRUNKER ESP NAME
 // @namespace    https://krunker.io/
-// @version      0.1
-// @description  Hope you guys enjoy the hack
-// @author       SkidLamer & YTFazeKiller23
+// @version      1.9.3
+// @description  Zares make for us a ESP hack
+// @author       ZaresPlus X
 // @match        *://krunker.io/*
 // @runAt        document-start
 // @grant        none
@@ -67,7 +67,7 @@
     var _cnBSeen, _canSee, _pchObjc, _objInstances, _isYou, _recoilAnimY, _mouseDownL, _mouseDownR, _getWorldPosition, _didShoot, _maxHealth, _ammos, _weaponIndex, _inputs, _me, _world, _procInputs;
     const defined = object => typeof object !== "undefined";
 
-    const original_encode = TextEncoder.prototype.encodeInto; // skidLamer
+    const original_encode = TextEncoder.prototype.encodeInto;
     let hook_encode = new Proxy(original_encode, {
         apply: function(target, _this, _arguments) {
             let game = false;
@@ -259,7 +259,7 @@
         let runQuickscoper = (target) => {
             if (me[_didShoot]) {
                 me.aimVal = 0;
-                settings.canShoot = false;
+                settings.canShoot = true;
                 setTimeout(() => {
                     inputs[input.scope] = controls[_mouseDownR] = 0;
                     inputs[input.shoot] = controls[_mouseDownL] = 0;
@@ -270,7 +270,7 @@
                 me.aimVal = 0;
                 inputs[input.scope] = controls[_mouseDownR] = 0;
                 inputs[input.shoot] = controls[_mouseDownL] = 0;
-                settings.scopingOut = true;
+                settings.scopingOut = false;
             }
             if (me.aimVal === 1) {
                 settings.scopingOut = false;
