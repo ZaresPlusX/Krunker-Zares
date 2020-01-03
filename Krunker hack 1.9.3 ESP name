@@ -165,9 +165,9 @@
         gmSmall: '20px\x20GameFont'
     }
     let settings = {
-        isSliding: true,
+        isSliding: false,
         distance: Infinity,
-        scopingOut: false,
+        scopingOut: ture,
         canShoot: false,
     }
 
